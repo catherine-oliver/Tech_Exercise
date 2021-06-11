@@ -24,3 +24,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('pages.urls')), # new
 ]
+
+from django.views.generic import RedirectView
+urlpatterns += [
+    path('', RedirectView.as_view(url='pages/', permanent=True)),
+]

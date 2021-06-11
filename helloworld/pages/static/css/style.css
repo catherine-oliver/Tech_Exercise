@@ -1,0 +1,44 @@
+.NavBar {
+    background-color:cadetblue;
+    list-style-type: none;
+    width:100%;
+    padding-left:20px;
+    margin:0px;
+}
+
+.NavItem {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:black;
+    background-color: cadetblue;
+    
+}
+
+.NavItem:hover {
+    color:rgb(82, 134, 136);
+}
+
+.header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.TaskList {
+    border-style: 1px solid;
+    width: 50%;
+    background-color: rgb(211, 211, 211);
+    border-color:black;
+    margin-left:10px;
+    padding:10px;
+    list-style-type: none;
+    min-height: 50%;
+}
+
+.TaskItem {
+    background-color: rgb(230, 230, 230);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.PageContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+}

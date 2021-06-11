@@ -1,7 +1,9 @@
 # pages/urls.py
 from django.urls import path
-from .views import homePageView
+from .views import addPage
+from .views import addTask
 
 urlpatterns = [
-    path('', homePageView, name='home')
+    path('', addPage, name='addPage'),
+    path('add-task/', addTask, name="addTask")
 ]
