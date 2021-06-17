@@ -12,6 +12,9 @@ from django.shortcuts import redirect
 def homePageView(request):
     return HttpResponse('Hello world')
 
+def ryanBranchView(request):
+    return HttpResponse('These are the changes made to Ryan\'s Branch!')
+
 def addPage(request):
 
     items = Task.objects.all().values('name')
