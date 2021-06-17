@@ -4,15 +4,28 @@
     <div class="col-sm-5">
         <h1 class="header">To Do List</h1>
         <ul class="TaskList">
-            {% for task in task_list %}
+            <!-- {% for task in task_list %}
             <li class="TaskItem">{{ task.name }}</li>
-            {% endfor %}
+            {% endfor %} -->
         </ul>
         <form action='/add-task/' method="post">
 
             <input id="task_name" type="text" maxlength="100" name='task_name' required></input>
-            <input type="submit" value="Add"></button>
+            <input type="submit" value="Add 1st Task"></button>
             {% csrf_token %}
+	    
+            <br> <br>
+
+	    <input id="task_name" type="text" maxlength="100" name='task_name' required></input>
+            <input type="submit" value="Add 2nd Task"></button>
+            {% csrf_token %}
+
+           <br> <br>
+
+	    <input id="task_name" type="text" maxlength="100" name='task_name' required></input>
+            <input type="submit" value="Add 3rd Task"></button>
+            {% csrf_token %}
+
         </form>
     </div>
     <div class="col-sm-10"></div>
