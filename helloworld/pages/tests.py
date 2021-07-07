@@ -1,12 +1,13 @@
 from django.test import LiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 class AddFunctionalityTest(LiveServerTestCase):
 
     def testAdd(self):
-        selenium = webdriver.Chrome()
+        selenium = webdriver.Chrome(ChromeDriverManager().install())
         selenium.get("http://localhost:8000/")
 
         task_input = selenium.find_element_by_id('task_name')

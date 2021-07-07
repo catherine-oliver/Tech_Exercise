@@ -1,0 +1,13 @@
+<testsuite errors="1" failures="0" name="Django Project Tests" skips="0" tests="1" time="12.185"><testcase classname="pages.tests.AddFunctionalityTest" name="testAdd" time="11.621755"><error message="Message: unknown error: net::ERR_CONNECTION_REFUSED&#10;  (Session info: chrome=91.0.4472.124)&#10;" type="selenium.common.exceptions.WebDriverException">Traceback (most recent call last):
+  File "C:\Users\rchap\OneDrive\Courses\CSCI4830\Tech_Exercise\helloworld\pages\tests.py", line 11, in testAdd
+    selenium.get("http://localhost:8000/")
+  File "C:\Users\rchap\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\Users\rchap\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\rchap\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=91.0.4472.124)
+
+</error></testcase></testsuite>
